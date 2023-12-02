@@ -183,8 +183,41 @@
 
 
 
-let number = 33;
-let convertInString = String(number)
+// let number = 33;
+// let convertInString = String(number)
 
-console.log(convertInString)  // 33
-console.log(typeof convertInString)  // string
+// console.log(convertInString)  // 33
+// console.log(typeof convertInString)  // string
+
+
+
+// ************ Operations ***************
+
+let value = 3;
+let negValue = -value
+// console.log(negValue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2**3)
+// console.log(5%3)
+
+
+
+// let str1 = "Hello";
+// let str2 = "Umair";
+// console.log(str1 + " " + str2);
+
+
+// console.log('1' + 2);
+// console.log(1 + '2');
+// console.log('1' + 2 + 2);
+// console.log(1 + 2 + '2');
+
+
+
+
+console.log(+true) // 1
+console.log(+false) // 0
