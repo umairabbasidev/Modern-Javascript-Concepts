@@ -47,9 +47,6 @@ console.log(myFun())
 
 
 
-
-
-
 // js is dynamically typed language 
 
 
