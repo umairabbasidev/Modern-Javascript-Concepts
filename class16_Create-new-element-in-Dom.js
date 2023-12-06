@@ -27,3 +27,26 @@ document.body.appendChild(h1)
 
 
 console.log(h1)
+
+
+// const img = document.createElement("img")
+// img.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssK4b3rN8eNRP62msKifMLeOmzZrCup4YAA&usqp=CAU")
+// img.setAttribute("alt","nature")
+// document.body.appendChild(img)
+// console.log(img)
+
+// const p = document.createElement("p")
+// p.className = "main"
+// p.id = "main-id"
+// p.setAttribute("title","my-title")
+// p.setAttribute("title","my-title test")
+// // p.innerHTML = "Muhammad Umair Abbasi"
+// // p.innerText = "Muhammad Umair Abbasi"
+// const addTextForOptimization = document.createTextNode("Muhammad Umair Abbasi")
+// p.appendChild(addTextForOptimization)
+// p.style.color = "red"
+
+// document.body.appendChild(p)
+// console.log(p)
+
+

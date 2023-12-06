@@ -3,7 +3,7 @@
 
 // accessing the parent then goes to child  
 const parent = document.querySelector(".parent") //
-// console.log(parent)
+console.log(parent)
 // console.log(parent.children) // HTMLCollection HTMLCollection(4) [div.day, div.day, div.day, div.day]
 // console.log(parent.children[0].innerHTML)// Monday
 
