@@ -52,4 +52,67 @@ const target = document.getElementById("title")
 
 // getting element by querySelector
 
-const targer2 = document.querySelector(".title")
+// const targer2 = document.querySelector("h2")
+// const targer2 = document.querySelector("#title")
+// const targer2 = document.querySelector(".heading")
+// const targer2 = document.querySelector("input")
+// const targer2 = document.querySelector("input[type= 'number']")
+// const targer2 = document.querySelector("input[type= 'email']")
+
+
+// console.log(targer2)
+
+
+// let ul = document.querySelector("ul")
+// let li = document.querySelector("li")
+// li.style.color = "red "
+// li.innerHTML = "Umair Abbasi"
+
+
+// _______X_______X_________
+
+// getiing  element by queraySelectorAll
+
+// const target3 = document.querySelectorAll('h2')
+// target3.forEach((item)=>{
+// item.style.color = "blue"
+// })
+
+
+// console.log(target3) // return nodeList which is similar to array but not exist array
+
+const myList = document.querySelectorAll("li");
+// myList.forEach((item)=>{
+// item.style.color = "red"
+// item.style.listStyle = "none"
+// // item.style.backgroundColor = "yellow"
+
+// })
+
+// myList[2].style.color = "red"
+
+
+// note 
+// qs mai hamin serif first element milta h 
+// qsa mai hamin all elemet milte hn pr node list mai or nodelist array se silimir hota h pr exist array ni hota for each looping kr key apni styling kr sakte h . or agr map wagera use krna h to wo hum ose hum array mai convert kr key use kr sakte hn   pr hamin ek specfic elemet ko stylng krno ho to [] ye syntex ise kr key kr sakte hn
+
+// _______X______X_________
+
+
+// getting elemet by className
+
+const target4 = document.getElementsByClassName("list-item")
+// target4[3].style.color = "red"  // return HTMLcollection whcih is different from nodeList 
+
+const converted = Array.from(target4)
+converted.forEach((item)=>{
+item.style.color = "red"
+})
+console.log(converted)
+// converted[0].style.color = "red"
+// console.log(target4)
+
+
+
+
+
