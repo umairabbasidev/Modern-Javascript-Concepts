@@ -1,0 +1,64 @@
+// Topic Edit and remove element in dom
+
+
+function addLanguage(langName){
+const li = document.createElement("li")
+li.innerHTML = `${langName}`
+li.style.color = "red"
+const extract = document.querySelector(".language")
+
+extract.appendChild(li)
+}
+
+addLanguage("Python")
+addLanguage("Ruby")
+
+
+function addOptiLanguage(langName){
+ const li = document.createElement("li")
+ const addText =document.createTextNode(langName)
+ li.appendChild(addText)
+ const extract = document.querySelector(".language")
+extract.appendChild(li)
+ 
+}
+
+addOptiLanguage("Hello")
+
+
+// Edit 
+
+// const secondLang = document.querySelector("li:nth-child(2)")
+// // secondLang.innerHTML = "Umair" // not optimized approach
+// const newLi = document.createElement("li")
+// newLi.textContent = "Umair";
+// secondLang.replaceWith(newLi)
+
+// console.log(secondLang)
+
+// edit practice
+
+// const thirdLang = document.querySelector("li:nth-child(3)")
+// const newLi = document.createElement("li")
+// newLi.textContent = "abbasi"
+// thirdLang.replaceWith(newLi)
+// console.log(thirdLang)
+
+// another approach
+
+const firstLang = document.querySelector("li")
+firstLang.outerHTML = "<li>Umair</li>"
+console.log(firstLang)
+
+
+// remove
+
+// lastLang = document.querySelector("li:last-child")
+// lastLang.remove()
+// console.log(lastLang)
+
+
+// remove practice
+const third =document.querySelector("li:nth-child(3)")
+third.remove()
+console.log(third)
