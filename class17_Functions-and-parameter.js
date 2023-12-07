@@ -45,47 +45,39 @@ const result = addTwoNumbers(5, 5);
 
 // note hamin return krna ho ga agr hum bahir ose kise variable mai store krna chate hn other wise hamin undefined mila ga
 
-
-
-function loginUserMessage(username){
-return `${username} just logged in`
+function loginUserMessage(username) {
+  return `${username} just logged in`;
 }
 
 // console.log(loginUserMessage("Umair Abbasi"))
 // console.log(loginUserMessage("Uzair Abbasi"))
 
-
-
-function loginUserMessage(username){
- if (username===undefined) {
-  console.log("Please enter a username")
-  return
- }
- return `${username} just logged in`
- }
- console.log(loginUserMessage())
-
-
- function loginUserMessage(username){
-  if (!username) { // same as above 
-   console.log("Please enter a username")
-   return
+function loginUserMessage(username) {
+  if (username === undefined) {
+    console.log("Please enter a username");
+    return;
   }
-  return `${username} just logged in`
+  return `${username} just logged in`;
+}
+console.log(loginUserMessage());
+
+function loginUserMessage(username) {
+  if (!username) {
+    // same as above
+    console.log("Please enter a username");
+    return;
   }
-  console.log(loginUserMessage())
+  return `${username} just logged in`;
+}
+console.log(loginUserMessage());
 
+function loginUserMessage(username = "Umair") {
+  if (username === undefined) {
+    console.log("Please enter a username");
+    return;
+  }
+  return `${username} just logged in`;
+}
+console.log(loginUserMessage()); // if we not provided not value so it can use by use above value which is Umair. and if we provied any value so it can replace from new value\
 
-
-  function loginUserMessage(username="Umair"){
-   if (username===undefined) {
-    console.log("Please enter a username")
-    return
-   }
-   return `${username} just logged in`
-   }
-   console.log(loginUserMessage()) // if we not provided not value so it can use by use above value which is Umair. and if we provied any value so it can replace from new value\
-
-
-
-   console.log(loginUserMessage("Uzair khan"))
+console.log(loginUserMessage("Uzair khan"));
